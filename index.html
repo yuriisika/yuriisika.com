@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" class="">
-
+<html lang="en-GB">
 <head>
-
-  <!-- Google Analytics -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yurii Sika | Android Software Engineer | Kotlin &amp; Mobile</title>
+  <meta name="description" content="UK-based Android Software Engineer with 5+ years of commercial experience in Kotlin, Java, Jetpack Compose, Kotlin Multiplatform and production mobile engineering.">
+  <link rel="canonical" href="https://yuriisika.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://yuriisika.com/">
+  <meta property="og:site_name" content="Yurii Sika">
+  <meta property="og:title" content="Yurii Sika | Android Software Engineer">
+  <meta property="og:description" content="Commercial Android engineering and independent mobile products. Explore Yurii Sika’s work and experience.">
+  <meta property="og:image" content="https://yuriisika.com/portfolio/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Yurii Sika, Android Software Engineer. Stylised illustration of the layers of a mobile app.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yurii Sika | Android Software Engineer">
+  <meta name="twitter:description" content="Commercial Android engineering and independent mobile products. Explore Yurii Sika’s work and experience.">
+  <meta name="twitter:image" content="https://yuriisika.com/portfolio/share.png">
+  <meta name="twitter:image:alt" content="Yurii Sika, Android Software Engineer. Stylised illustration of the layers of a mobile app.">
+  <link rel="icon" href="/favicon_32.png" sizes="32x32">
+  <link rel="icon" href="/favicon_192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/favicon_512.png">
+  <script>
+    if (location.pathname === '/index.html') {
+      history.replaceState(null, '', '/' + location.search + location.hash);
+    }
+    // Apply the saved preference before rendering and keep the shared theme key.
+    try {
+      const theme = localStorage.getItem('theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="/portfolio/portfolio.css">
+  <script defer src="/script.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZV2LLNLML"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,854 +43,460 @@
     gtag('js', new Date());
     gtag('config', 'G-YZV2LLNLML');
   </script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yurii Sika | Android Software Engineer</title>
-
-  <meta name="description"
-    content="Yurii Sika — Android Software Engineer specializing in Kotlin, Jetpack Compose and scalable mobile architecture. Based in the UK." />
-
-  <link rel="canonical" href="https://yuriisika.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yuriisika.com/" />
-  <meta property="og:title" content="Yurii Sika | Android Software Engineer" />
-  <meta property="og:description"
-    content="Android Engineer building mobile apps with Kotlin, Jetpack Compose and Clean Architecture." />
-  <meta property="og:image" content="https://yuriisika.com/favicon_192.png" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Yurii Sika | Android Software Engineer" />
-  <meta name="twitter:description"
-    content="Android Engineer building mobile apps with Kotlin and modern Android architecture." />
-  <meta name="twitter:image" content="https://yuriisika.com/favicon_512.png" />
-
-  <!-- Tailwind (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="icon" href="./favicon_32.png" sizes="32x32" />
-  <link rel="icon" href="./favicon_192.png" sizes="192x192" />
-  <link rel="apple-touch-icon" href="./favicon_512.png" />
-  <meta name="msapplication-TileImage" content="./favicon_512.png" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
-    :root {
-      --primary: #3b82f6;
-      --primary-hover: #2563eb;
-      --ring: rgba(59, 130, 246, .35);
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    /* Subtle glass header */
-    .glass {
-      background: rgba(255, 255, 255, .78);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(15, 23, 42, .08);
-    }
-
-    .dark .glass {
-      background: rgba(17, 24, 39, .72);
-      border-bottom: 1px solid rgba(255, 255, 255, .08);
-    }
-
-    /* Cards */
-    .card {
-      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-    }
-
-    /* Contact hover lift (subtle, premium) */
-    .contact-card {
-      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-
-    .contact-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 18px 45px rgba(2, 6, 23, .10);
-    }
-
-    .dark .contact-card:hover {
-      box-shadow: 0 18px 45px rgba(0, 0, 0, .35);
-    }
-
-    .chip {
-      background: rgba(59, 130, 246, .10);
-      color: var(--primary);
-      padding: 5px 12px;
-      border-radius: 9999px;
-      font-size: .875rem;
-      font-weight: 600;
-      line-height: 1.1;
-      border: 1px solid rgba(59, 130, 246, .14);
-    }
-
-    .dark .chip {
-      background: rgba(59, 130, 246, .12);
-      border-color: rgba(59, 130, 246, .18);
-    }
-
-    /* HERO glow + gradient name */
-    .hero-glow {
-      position: relative;
-      isolation: isolate;
-    }
-
-    .hero-glow::before {
-      content: "";
-      position: absolute;
-      inset: -140px -80px -140px -80px;
-      z-index: -1;
-      background:
-        radial-gradient(600px 400px at 50% 40%, rgba(15, 23, 42, .05), transparent 60%);
-      pointer-events: none;
-    }
-
-    .name-gradient {
-      background: linear-gradient(90deg, #2563eb, #60a5fa);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    /* Focus styles */
-    :focus-visible {
-      outline: 3px solid var(--ring);
-      outline-offset: 3px;
-      border-radius: 12px;
-    }
-
-    /* Skip link */
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 12px;
-      background: white;
-      color: #0f172a;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(15, 23, 42, .15);
-      z-index: 1000;
-    }
-
-    .skip-link:focus {
-      left: 12px;
-    }
-
-    .dark .skip-link {
-      background: #111827;
-      color: #e5e7eb;
-      border-color: rgba(255, 255, 255, .12);
-    }
-
-    /* --------- COMPACT CARDS (requested) --------- */
-    .card-compact {
-      padding: 20px !important;
-    }
-
-    .card-compact .card-icon {
-      width: 44px !important;
-      height: 44px !important;
-      border-radius: 14px !important;
-      margin-bottom: 14px !important;
-      font-size: 18px !important;
-    }
-
-    .card-compact h4 {
-      font-size: 1.05rem !important;
-      margin-bottom: 8px !important;
-    }
-
-    .card-compact p {
-      font-size: 0.95rem !important;
-      line-height: 1.45 !important;
-      margin-bottom: 14px !important;
-    }
-
-    .card-compact .chip {
-      padding: 4px 10px !important;
-      font-size: .82rem !important;
-    }
-
-    .card-compact .chips {
-      gap: 8px !important;
-      margin-bottom: 0 !important;
-    }
-  </style>
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: { primary: '#3b82f6' }
-        }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://yuriisika.com/#person",
+        "name": "Yurii Sika",
+        "jobTitle": "Android Software Engineer",
+        "url": "https://yuriisika.com/",
+        "sameAs": ["https://www.linkedin.com/in/yurii-sika-ld-in/", "https://github.com/yurasika25"],
+        "knowsAbout": ["Android software engineering", "Kotlin", "Jetpack Compose", "Kotlin Multiplatform"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://yuriisika.com/#website",
+        "url": "https://yuriisika.com/",
+        "name": "Yurii Sika",
+        "inLanguage": "en-GB",
+        "publisher": {"@id": "https://yuriisika.com/#person"}
       }
-    }
+    ]
+  }
   </script>
 </head>
-
-<body class="bg-slate-50 dark:bg-gray-900 text-slate-900 dark:text-gray-100 transition-colors duration-300">
-
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Header / Navigation -->
-  <header class="fixed top-0 w-full z-50 glass">
-    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="#top" class="text-xl font-extrabold tracking-tight" aria-label="Home">
-        YS<span class="text-primary">.</span>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top">
+        <span class="monogram" aria-hidden="true">YS</span>
+        <span>Yurii Sika</span>
       </a>
-
-      <nav class="flex items-center space-x-4" aria-label="Primary">
-        <a href="#projects"
-          class="hidden sm:inline text-sm font-semibold text-slate-700 dark:text-gray-200 hover:text-primary transition-colors">
-          Projects
-        </a>
-
-        </a>
-        <a href="#about"
-          class="hidden sm:inline text-sm font-semibold text-slate-700 dark:text-gray-200 hover:text-primary transition-colors">
-          About
-        </a>
-        <a href="#contact"
-          class="hidden sm:inline text-sm font-semibold text-slate-700 dark:text-gray-200 hover:text-primary transition-colors">
-          Contact
-        </a>
-
-        <button id="theme-toggle" class="p-2 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
-          aria-label="Toggle theme">
-          <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
-        </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#products">Products</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <div class="header-controls">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false" title="Toggle light or dark theme" hidden>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.5 15.2a8.7 8.7 0 0 1-11.7-11.7A8.7 8.7 0 1 0 20.5 15.2Z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        </button>
+        <button class="icon-button" id="menu-toggle" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false" hidden>
+          <svg class="menu-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="close-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section id="top" class="pt-32 pb-20 px-4">
-      <div class="max-w-5xl mx-auto text-center hero-glow">
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-5">
-          <span class="text-slate-900 dark:text-white">Yurii</span>
-          <span class="name-gradient">Sika</span>
-        </h1>
-
-        <p class="text-lg md:text-xl font-semibold text-slate-700 dark:text-gray-200 mb-3">
-          Android Software Engineer
-        </p>
-
-        <p class="text-sm md:text-base text-slate-500 dark:text-gray-400 mb-10">
-          Kotlin · Jetpack Compose · Kotlin Multiplatform · Clean Architecture
-        </p>
-
-        <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-4 mb-10">
-          <a href="#projects"
-            class="inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-primary text-white font-semibold hover:bg-[color:var(--primary-hover)] transition-colors">
-            View Projects
-            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
-          </a>
-          <a target="_blank" rel="noopener" href="https://github.com/yurasika25"
-            class="inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 font-semibold hover:border-slate-300 dark:hover:border-gray-600 transition-colors">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-            GitHub
-          </a>
-          <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yurii-sika-ld-in/"
-            class="inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 font-semibold hover:border-slate-300 dark:hover:border-gray-600 transition-colors">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            LinkedIn
-          </a>
-        </div>
-
-        <p class="text-sm text-slate-500 dark:text-gray-400">
-          UK-based · Eligible to work in the UK ·
-          <a class="font-semibold hover:text-primary transition-colors"
-            href="mailto:yurii.sika@outlook.com">yurii.sika@outlook.com</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECTS -->
-    <section id="projects" class="py-16 px-4">
-      <div class="max-w-6xl mx-auto">
-        <header class="text-center mb-12">
-          <h2 class="text-1xl md:text-4xl font-extrabold mb-3">Building the Future of Mobile</h2>
-          <p class="text-sm text-slate-500 dark:text-gray-400">
-            A selection of modern mobile products
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell layout hero-layout">
+        <div class="hero-copy">
+          <p class="hero-identity"><strong>Yurii Sika</strong> <span>Android Software Engineer</span></p>
+          <h1 id="hero-title">Engineering <em>reliable mobile</em> products.</h1>
+          <p class="hero-description">I bring <strong>5+ years of commercial experience</strong> building and modernising production Android apps with Kotlin, Java and Jetpack Compose. My work spans mobile architecture, Kotlin Multiplatform, conversational AI and real-time voice.</p>
+          <p class="hero-availability">
+            <svg class="line-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 11-8 11s-8-6-8-11a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>Based in the UK with the right to work. No sponsorship currently required.</span>
           </p>
-        </header>
-
-        <!-- Commercial / Client Work -->
-        <div class="mb-12">
-          <h3 class="text-xl md:text-2xl font-bold mb-6">Commercial / Client Work</h3>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            <!-- UK Taxi -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-taxi"></i>
-              </div>
-              <h4 class="font-bold">UK Taxi Aggregator</h4>
-              <p class="text-slate-600 dark:text-gray-400">
-                Ride-hailing aggregator across 270+ providers in 30+ UK cities. Led UI redesign and improved real-time
-                availability UX.
-              </p>
-              <div class="chips flex flex-wrap gap-2">
-                <span class="chip">Mobility</span>
-                <span class="chip">Maps</span>
-                <span class="chip">Real-time</span>
-                <span class="chip">UX</span>
-              </div>
-            </article>
-
-            <!-- Telecom -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-signal"></i>
-              </div>
-              <h4 class="font-bold">Telecom Self-Service App</h4>
-              <p class="text-slate-600 dark:text-gray-400">
-                Real-time self-service platform for balances, data, SMS, and VAS. Reduced Customer Care interactions by
-                ~30%.
-              </p>
-              <div class="chips flex flex-wrap gap-2">
-                <span class="chip">Telecom</span>
-                <span class="chip">Real-time</span>
-                <span class="chip">Reliability</span>
-              </div>
-            </article>
-
-            <!-- Marketplace -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </div>
-              <h4 class="font-bold">E-Commerce Marketplace</h4>
-              <p class="text-slate-600 dark:text-gray-400">
-                Marketplace app with scalable client architecture supporting upload, management, and purchasing
-                workflows.
-              </p>
-              <div class="chips flex flex-wrap gap-2">
-                <span class="chip">Marketplace</span>
-                <span class="chip">Scalability</span>
-                <span class="chip">Architecture</span>
-              </div>
-            </article>
-
-            <!-- Women -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-heart-pulse"></i>
-              </div>
-              <h4 class="font-bold">Women’s Health App</h4>
-              <p class="text-slate-600 dark:text-gray-400">
-                Health and wellbeing app with safety-critical features including SOS flow and tracking.
-              </p>
-              <div class="chips flex flex-wrap gap-2">
-                <span class="chip">Health</span>
-                <span class="chip">Safety</span>
-                <span class="chip">Privacy</span>
-              </div>
-            </article>
-
-            <!-- Learning -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <h4 class="font-bold">E-Learning Platform</h4>
-              <p class="text-slate-600 dark:text-gray-400">
-                Learning platform with offline support for video lessons and study materials.
-              </p>
-              <div class="chips flex flex-wrap gap-2">
-                <span class="chip">Education</span>
-                <span class="chip">Offline</span>
-                <span class="chip">Video</span>
-              </div>
-            </article>
-
-            <!-- KMP -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-code-branch"></i>
-              </div>
-              <h4 class="font-bold">Kotlin Multiplatform Migration</h4>
-              <p class="text-slate-600 dark:text-gray-400">
-                Migration to shared business logic across Android and iOS using Kotlin Multiplatform.
-              </p>
-              <div class="chips flex flex-wrap gap-2">
-                <span class="chip">KMP</span>
-                <span class="chip">Architecture</span>
-              </div>
-            </article>
-
+          <div class="actions hero-actions">
+            <a class="button primary" href="#work">Explore selected work</a>
+            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-links">
+            <a href="https://github.com/yurasika25" class="text-link">
+              <svg class="line-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 19c-4 1.2-4-2-6-2.5m12 5v-3a2.6 2.6 0 0 0-.7-2c2.3-.3 4.7-1.1 4.7-5A3.9 3.9 0 0 0 18 8.8a3.6 3.6 0 0 0-.1-2.8S17 5.7 15 7a11 11 0 0 0-6 0C7 5.7 6.1 6 6.1 6A3.6 3.6 0 0 0 6 8.8a3.9 3.9 0 0 0-1 2.7c0 3.9 2.4 4.7 4.7 5a2.6 2.6 0 0 0-.7 2v3"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/yurii-sika-ld-in/" class="text-link">
+              <svg class="line-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6ZM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
           </div>
         </div>
+        <figure class="hero-figure">
+          <div class="figure-header"><span class="figure-status" aria-hidden="true"></span> Mobile architecture</div>
+          <img src="/portfolio/mobile-architecture.svg" width="580" height="436" alt="" fetchpriority="high">
+          <figcaption class="figure-legend"><span>Interface</span><span>Application state</span><span>Data &amp; services</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-        <!-- Personal Products -->
-        <div>
-          <h3 class="text-xl md:text-2xl font-bold mb-6">Personal Products</h3>
+    <section class="impact" aria-labelledby="impact-title">
+      <div class="shell">
+        <h2 class="eyebrow" id="impact-title">Engineering impact</h2>
+        <dl class="metric-grid">
+          <div><dt>Commercial Android engineering</dt><dd>5+ <span>years</span></dd></div>
+          <div><dt>Marketplace active users in its first month</dt><dd>60,000+</dd></div>
+          <div><dt>Taxi providers connected across <strong>30+ UK cities</strong></dt><dd>270+</dd></div>
+          <div><dt>Students supported by offline learning</dt><dd><span class="visually-hidden">Approximately </span><span aria-hidden="true">≈</span>3,000</dd></div>
+        </dl>
+      </div>
+    </section>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section class="shell section" id="work" aria-labelledby="work-title">
+      <span class="anchor-alias" id="projects" aria-hidden="true"></span>
+      <div class="section-intro">
+        <p class="eyebrow">Commercial work</p>
+        <h2 id="work-title">Selected work</h2>
+        <p>Android engineering across transport, commerce and education, from shipping new features to making established products easier to use and maintain.</p>
+      </div>
 
-            <!-- Affirmation -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <div class="work-grid">
+        <article class="case case-featured" aria-labelledby="taxi-title">
+          <figure class="case-art map-art">
+            <svg viewBox="0 0 600 352" aria-hidden="true" focusable="false">
+              <defs>
+                <pattern id="map-grid" width="32" height="32" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><path d="M0 0h32v32" fill="none" stroke="#a5c2ff" stroke-opacity=".13"/></pattern>
+                <radialGradient id="map-glow"><stop stop-color="#325dcd" stop-opacity=".6"/><stop offset="1" stop-color="#0d1832" stop-opacity="0"/></radialGradient>
+              </defs>
+              <rect width="600" height="352" fill="#0e1b37"/>
+              <ellipse cx="300" cy="168" rx="343" ry="200" fill="url(#map-glow)"/>
+              <rect width="600" height="352" fill="url(#map-grid)"/>
+              <g fill="none" stroke="#819be8" stroke-opacity=".38" stroke-width="2">
+                <path d="M-5 258 170 194l79 53 178-65 179 2M87-10l86 95 154 17 74 57 71 5 134-62M-10 78l159 56 72 69 121-24 88 93 178 28M210-10l105 129-8 113 107 129M464-10 399 81l-3 94-59 69-37 115M504-10l-16 87-19 89 53 132-18 61"/>
+                <path d="M-12 309 113 252l89 1 51 97M-12 141l94-10 68 35-37 86 31 109M360-10l-16 54 55 37 101 20 101-17M210 0l-22 51 6 52-44 31"/>
+              </g>
+              <path d="M-10 206c123-3 140 62 238 68 106 7 117-90 211-79 70 8 43 73 172 54" fill="none" stroke="#5673a8" stroke-opacity=".36" stroke-width="15"/>
+              <path d="m140 218 43-19 46 21 97-41 70-4 42-44 69-30" fill="none" stroke="#76a3fa" stroke-width="18" stroke-opacity=".14" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="m140 218 43-19 46 21 97-41 70-4 42-44 69-30" fill="none" stroke="#9ebcff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <g fill="#142958" stroke="#abc7ff" stroke-width="2">
+                <circle cx="140" cy="218" r="10"/><circle cx="326" cy="179" r="7"/><circle cx="507" cy="101" r="10"/>
+              </g>
+              <g fill="#c9daff"><circle cx="140" cy="218" r="3"/><circle cx="507" cy="101" r="3"/></g>
+              <g fill="#adc3ff" fill-opacity=".8"><circle cx="173" cy="85" r="4"/><circle cx="427" cy="182" r="4"/><circle cx="522" cy="298" r="4"/><circle cx="113" cy="252" r="4"/><circle cx="399" cy="81" r="4"/><circle cx="294" cy="286" r="4"/></g>
+            </svg>
+            <figcaption>Provider discovery · Concept illustration</figcaption>
+          </figure>
+          <div class="case-body">
+            <p class="eyebrow">Transport · Android</p>
+            <h3 id="taxi-title">UK Taxi Aggregation Platform</h3>
+            <p>I built and maintained location, provider discovery and booking features for a UK ride-hailing service, and led a redesign to make the app easier to navigate.</p>
+            <p class="case-outcome"><strong>270+ providers</strong> across <strong>30+ UK cities</strong></p>
+            <ul class="tech-list" aria-label="Key taxi platform technologies"><li>Kotlin</li><li>Google Maps SDK</li><li>MVVM</li><li>Retrofit</li></ul>
+            <details class="disclosure">
+              <summary>Read case study<span class="visually-hidden"> for the UK Taxi Aggregation Platform</span></summary>
+              <div class="disclosure-body">
+                <h4>Engineering challenge</h4>
+                <p>Help riders find providers near them and follow a clear path from discovery to booking.</p>
+                <h4>Technical approach</h4>
+                <p>I worked with Google Maps SDK, REST APIs and local persistence. MVVM-based screen logic handled UI state. I collaborated with the UK client and QA teams on production delivery.</p>
+                <ul class="tech-list" aria-label="Additional taxi platform technologies"><li>Android SDK</li><li>XML</li><li>Hilt</li><li>Room</li><li>Espresso</li></ul>
               </div>
-
-              <h4 class="font-bold">Affirmation App</h4>
-
-              <p class="text-slate-600 dark:text-gray-400">
-                A modern affirmation and mindset app designed to support daily motivation and mental clarity. Built with
-                Kotlin Multiplatform for iOS and Android.
-              </p>
-
-              <div class="chips flex flex-wrap gap-2 mb-3">
-                <span class="chip">KMP</span>
-                <span class="chip">Mental Wellness</span>
-                <span class="chip">Compose</span>
-              </div>
-
-              <a href="/affirmation-app/"
-                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:opacity-80 transition-opacity">
-                View product →
-              </a>
-            </article>
-
-            <!-- Voice -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-microphone-lines"></i>
-              </div>
-
-              <h4 class="font-bold">Voice Transcribe</h4>
-
-              <p class="text-slate-600 dark:text-gray-400">
-                Multilingual speech-to-text mobile application supporting 14+ languages, with real-time transcription
-                and a modern Compose UI.
-              </p>
-
-              <div class="chips flex flex-wrap gap-2 mb-3">
-                <span class="chip">Android</span>
-                <span class="chip">Speech-to-Text</span>
-                <span class="chip">Real-time</span>
-              </div>
-
-              <a href="/voice-transcribe/"
-                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:opacity-80 transition-opacity">
-                View product →
-              </a>
-            </article>
-
-            <!-- Notebook -->
-            <article
-              class="card card-compact bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-              <div
-                class="card-icon bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary">
-                <i class="fa-solid fa-book-open"></i>
-              </div>
-
-              <h4 class="font-bold">Easy Notebook</h4>
-
-              <p class="text-slate-600 dark:text-gray-400">
-                Minimal and distraction-free note-taking application focused on clarity, speed, and user experience,
-                built using modern Android best practices.
-              </p>
-
-              <div class="chips flex flex-wrap gap-2 mb-3">
-                <span class="chip">Productivity</span>
-                <span class="chip">Android</span>
-              </div>
-
-              <a href="/easy-notebook/"
-                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:opacity-80 transition-opacity">
-                View product →
-              </a>
-            </article>
-
+            </details>
           </div>
+        </article>
+
+        <article class="case" aria-labelledby="market-title">
+          <figure class="case-art market-art">
+            <svg viewBox="0 0 600 230" aria-hidden="true" focusable="false">
+              <defs><pattern id="market-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#9bcaff" fill-opacity=".26"/></pattern></defs>
+              <rect width="600" height="230" fill="#122a45"/>
+              <rect width="600" height="230" fill="url(#market-grid)"/>
+              <g fill="none" stroke="#71aacd" stroke-opacity=".65" stroke-width="1.5"><path d="M0 114h137m98 0h169m91 0h105M268 114V60h38m29 54v56h-42"/><circle cx="268" cy="114" r="4" fill="#82c9f3"/><circle cx="335" cy="114" r="4" fill="#82c9f3"/><circle cx="306" cy="60" r="4" fill="#82c9f3"/><circle cx="293" cy="170" r="4" fill="#82c9f3"/></g>
+              <g fill="#1b3b5a" stroke="#8ec8ec" stroke-width="1.5"><rect x="137" y="65" width="98" height="98" rx="14"/><rect x="404" y="65" width="98" height="98" rx="14"/></g>
+              <g fill="none" stroke="#c2e6ff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><rect x="164" y="92" width="17" height="17" rx="3"/><rect x="191" y="92" width="17" height="17" rx="3"/><rect x="164" y="119" width="17" height="17" rx="3"/><rect x="191" y="119" width="17" height="17" rx="3"/><path d="M433 105h41v28h-41zM429 96h49v9h-49zM453 105v28m-7-22h14"/></g>
+            </svg>
+            <figcaption>Catalogue to order · Concept illustration</figcaption>
+          </figure>
+          <div class="case-body">
+            <p class="eyebrow">Commerce · Android</p>
+            <h3 id="market-title">E-Commerce Marketplace</h3>
+            <p>I delivered core Android features for a mobile marketplace covering product management, purchasing and orders.</p>
+            <p class="case-outcome"><strong>60,000+ active users</strong> in the first month after launch</p>
+            <ul class="tech-list" aria-label="Key marketplace technologies"><li>Kotlin</li><li>Jetpack Compose</li><li>Clean Architecture</li><li>Room</li></ul>
+            <details class="disclosure">
+              <summary>Read case study<span class="visually-hidden"> for the E-Commerce Marketplace</span></summary>
+              <div class="disclosure-body">
+                <h4>Engineering challenge</h4>
+                <p>Support data-driven marketplace flows while keeping the Android codebase maintainable as the product grew.</p>
+                <h4>Technical approach</h4>
+                <p>I built Compose interfaces with reactive state, integrated backend APIs and local persistence, and contributed to the application architecture.</p>
+                <ul class="tech-list" aria-label="Additional marketplace technologies"><li>Coroutines</li><li>Dagger</li><li>MVVM</li><li>REST APIs</li></ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="case" aria-labelledby="learning-title">
+          <figure class="case-art learning-art">
+            <svg viewBox="0 0 600 230" aria-hidden="true" focusable="false">
+              <defs><pattern id="learning-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#c2b4fb" fill-opacity=".28"/></pattern></defs>
+              <rect width="600" height="230" fill="#211e41"/>
+              <rect width="600" height="230" fill="url(#learning-grid)"/>
+              <g fill="none" stroke="#a59adc" stroke-width="1.5" stroke-opacity=".65"><path d="M0 114h121m360 0h119m-402 0h207m-150 0V64h92v50m-92 0v50h92v-50"/><circle cx="255" cy="114" r="4" fill="#baa9fc"/><circle cx="347" cy="114" r="4" fill="#baa9fc"/></g>
+              <g fill="#322953" stroke="#b7a6f2" stroke-width="1.5"><rect x="121" y="73" width="83" height="82" rx="14"/><rect x="398" y="73" width="83" height="82" rx="14"/><circle cx="301" cy="114" r="34"/></g>
+              <g fill="none" stroke="#e0d6ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M147 100h31v29h-31zM153 107h19m-19 7h19m-19 7h10M425 101h29v26h-29z"/><path d="m436 108 11 6-11 6zM301 99v22m-8-8 8 8 8-8m-20 16h24"/></g>
+            </svg>
+            <figcaption>Offline content · Concept illustration</figcaption>
+          </figure>
+          <div class="case-body">
+            <p class="eyebrow">Education · Android</p>
+            <h3 id="learning-title">Offline E-Learning Platform</h3>
+            <p>I implemented offline access to learning materials and video lessons for students with unreliable internet access.</p>
+            <p class="case-outcome"><strong>Approximately 3,000 students</strong> supported</p>
+            <ul class="tech-list" aria-label="Key e-learning technologies and practices"><li>Room</li><li>ExoPlayer</li><li>Kotlin</li><li>Offline-first development</li></ul>
+            <details class="disclosure">
+              <summary>Read case study<span class="visually-hidden"> for the Offline E-Learning Platform</span></summary>
+              <div class="disclosure-body">
+                <h4>Engineering challenge</h4>
+                <p>Keep educational content and video lessons available when students lose their connection.</p>
+                <h4>Technical approach</h4>
+                <p>I worked on local persistence, caching, media playback and API integrations, and collaborated with backend engineers on content availability.</p>
+                <ul class="tech-list" aria-label="Additional e-learning technologies"><li>Java</li><li>Jetpack Compose</li><li>Retrofit</li><li>MVVM</li><li>Clean Architecture</li><li>JUnit</li></ul>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <div class="additional-work">
+        <h3>Additional commercial experience</h3>
+        <dl class="work-index">
+          <div><dt>Telecom Self-Service</dt><dd>Account and service management, payments, API integration, Java maintenance, Kotlin modernisation and production issue resolution.</dd></div>
+          <div><dt>Women’s Health</dt><dd>Wellbeing features for sensitive user journeys, with scheduled background work, notifications and local state management.</dd></div>
+          <div>
+            <dt>Passport &amp; Visa Helper</dt>
+            <dd>
+              <p>I modernised Android passport photo and order workflows, including QR code scanning with CameraX and Google ML Kit Barcode Scanning, Android App Links, backend integration, and Google Pay and PayPal payments.</p>
+              <details class="disclosure work-disclosure">
+                <summary>Camera and deep-link engineering<span class="visually-hidden"> for Passport and Visa Helper</span></summary>
+                <div class="disclosure-body"><p>I routed the scanner through the existing deep-link flow so that scanned QR codes and Android App Links lead to the same workflow. I worked on camera lifecycle management and refactored the legacy Android architecture.</p></div>
+              </details>
+            </dd>
+          </div>
+          <div><dt>Kotlin Multiplatform Migration</dt><dd>Contributed to an early-stage migration towards shared business logic for Android and iOS.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="products-section section" id="products" aria-labelledby="products-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow">Independent products</p>
+          <h2 id="products-title">Mobile products I build</h2>
+          <p>I take products from design and development through release and maintenance, and use prototypes to explore new ideas.</p>
         </div>
 
-
-      </div>
-    </section>
-    <!-- 
-    ENGINEERING PHILOSOPHY
-     <section id="philosophy" class="py-16 px-4 bg-white dark:bg-gray-800/50">
-      <div class="max-w-6xl mx-auto">
-        <header class="mb-8">
-          <h2 class="text-2xl md:text-3xl font-extrabold mb-2">How I build software</h2>
-          <p class="text-slate-600 dark:text-gray-400 max-w-2xl">
-            A practical set of principles I use to keep mobile systems maintainable and fast as they scale.
-          </p>
-        </header>
-
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <li class="bg-slate-50 dark:bg-gray-900/40 border border-slate-200/60 dark:border-gray-700 rounded-2xl p-5">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-primary mt-1" aria-hidden="true"></i>
-              <span class="font-semibold">Design for change and scalability</span>
+        <article class="product affirmation-product" aria-labelledby="affirmation-title">
+          <div class="product-body">
+            <div class="product-meta">
+              <img src="/affirmation-app/logo-current-small.png" width="48" height="47" alt="" loading="lazy" decoding="async">
+              <p class="eyebrow">Android &amp; iOS · In development</p>
             </div>
-          </li>
-          <li class="bg-slate-50 dark:bg-gray-900/40 border border-slate-200/60 dark:border-gray-700 rounded-2xl p-5">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-primary mt-1" aria-hidden="true"></i>
-              <span class="font-semibold">Prefer simplicity over complexity</span>
-            </div>
-          </li>
-          <li class="bg-slate-50 dark:bg-gray-900/40 border border-slate-200/60 dark:border-gray-700 rounded-2xl p-5">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-primary mt-1" aria-hidden="true"></i>
-              <span class="font-semibold">Measure performance early</span>
-            </div>
-          </li>
-          <li class="bg-slate-50 dark:bg-gray-900/40 border border-slate-200/60 dark:border-gray-700 rounded-2xl p-5">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-primary mt-1" aria-hidden="true"></i>
-              <span class="font-semibold">Build with product mindset</span>
-            </div>
-          </li>
-          <li class="bg-slate-50 dark:bg-gray-900/40 border border-slate-200/60 dark:border-gray-700 rounded-2xl p-5 md:col-span-2">
-            <div class="flex items-start gap-3">
-              <i class="fa-solid fa-check text-primary mt-1" aria-hidden="true"></i>
-              <span class="font-semibold">Think in systems, not screens</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section> -->
-
-    <!-- TECH STACK / EXPERTISE -->
-    <section id="stack" class="py-16 px-4">
-      <div class="max-w-6xl mx-auto">
-
-        <header class="mb-10">
-          <h2 class="text-2xl md:text-3xl font-extrabold mb-3">Engineering expertise</h2>
-          <p class="text-slate-600 dark:text-gray-400 max-w-2xl">
-            Core capabilities I rely on to design, build, and ship reliable mobile systems.
-          </p>
-        </header>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-          <!-- Mobile -->
-          <article
-            class="bg-white dark:bg-gray-800 p-7 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-3">Mobile</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-gray-200">
-              <li>Kotlin</li>
-              <li>Jetpack Compose</li>
-              <li>Kotlin Multiplatform</li>
-              <li>Coroutines / Flow</li>
+            <h3 id="affirmation-title">Affirmation App</h3>
+            <p>A cross-platform wellbeing prototype with five ways to take a moment for yourself.</p>
+            <ul class="pillars">
+              <li>AI text conversations</li>
+              <li>Real-time AI voice conversations</li>
+              <li>Affirmations</li>
+              <li>Guided meditations</li>
+              <li>Relaxing nature sounds</li>
             </ul>
-          </article>
-
-          <!-- Architecture -->
-          <article
-            class="bg-white dark:bg-gray-800 p-7 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-3">Architecture</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-gray-200">
-              <li>Clean Architecture</li>
-              <li>MVVM / MVI</li>
-              <li>Modularisation</li>
-              <li>Designing for scalability</li>
-            </ul>
-          </article>
-
-          <!-- Delivery -->
-          <article
-            class="bg-white dark:bg-gray-800 p-7 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-3">Delivery</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-gray-200">
-              <li>CI/CD (GitHub Actions)</li>
-              <li>Performance optimisation</li>
-              <li>Crash monitoring</li>
-              <li>Release ownership</li>
-            </ul>
-          </article>
-
-          <!-- Quality -->
-          <article
-            class="bg-white dark:bg-gray-800 p-7 rounded-2xl shadow-sm border border-slate-100 dark:border-gray-700">
-            <h3 class="font-bold text-lg mb-3">Quality</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-gray-200">
-              <li>Code reviews</li>
-              <li>Testing strategy</li>
-              <li>Observability mindset</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="py-16 px-4 bg-white dark:bg-gray-800/50">
-      <div class="max-w-6xl mx-auto">
-        <header class="mb-6">
-          <h2 class="text-2xl md:text-3xl font-extrabold mb-2">About</h2>
-        </header>
-
-        <p class="text-slate-700 dark:text-gray-200 max-w-3xl leading-relaxed">
-          Android Software Engineer with 5+ years of experience delivering complete mobile solutions from concept to
-          release in Agile, cross-functional teams using Scrum. Skilled in Kotlin, Jetpack Compose, Coroutines,
-          Retrofit, and Clean Architecture, developing clean, maintainable code and reliable Android products.
-        </p>
-      </div>
-    </section>
-
-    <!-- CONTACT (STRONG) -->
-    <section id="contact" class="py-20 px-4 relative overflow-hidden">
-      <!-- soft glow background -->
-      <div class="pointer-events-none absolute inset-0">
-        <div class="absolute -top-40 left-1/2 -translate-x-1/2 h-[520px] w-[900px] rounded-full opacity-60 blur-3xl"
-          style="background: radial-gradient(closest-side, rgba(59,130,246,.18), transparent 70%);"></div>
-        <div class="absolute -bottom-48 left-1/2 -translate-x-1/2 h-[520px] w-[900px] rounded-full opacity-50 blur-3xl"
-          style="background: radial-gradient(closest-side, rgba(59,130,246,.12), transparent 70%);"></div>
-      </div>
-
-      <div class="max-w-6xl mx-auto relative">
-        <header class="text-center mb-10">
-          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Contact</h2>
-          <p class="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
-            The fastest way to reach me is email. You can also connect via LinkedIn or GitHub.
-          </p>
-        </header>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-          <!-- Email -->
-          <article class="contact-card bg-white dark:bg-gray-800 rounded-3xl border border-slate-200/70 dark:border-gray-700
-                      shadow-sm p-6">
-            <div class="flex items-center gap-3">
-              <span class="h-12 w-12 rounded-2xl grid place-items-center bg-blue-100 dark:bg-blue-900/30 text-primary">
-                <i class="fa-solid fa-envelope"></i>
-              </span>
-              <div>
-                <div class="font-bold text-lg">Email</div>
-                <div class="text-sm text-slate-600 dark:text-gray-400 break-all" id="emailValue">yurii.sika@outlook.com
+            <ul class="tech-list" aria-label="Key Affirmation App technologies"><li>Kotlin Multiplatform</li><li>Compose Multiplatform</li><li>OpenAI APIs</li><li>WebRTC</li><li>Supabase</li></ul>
+            <div class="actions product-actions"><a class="button secondary" href="/affirmation-app/">Explore Affirmation App</a></div>
+          </div>
+          <figure class="product-art affirmation-art">
+            <div class="device-pair">
+              <img class="device-home" src="/portfolio/affirmation-home-384.webp" srcset="/portfolio/affirmation-home-384.webp 384w, /portfolio/affirmation-home-704.webp 704w" sizes="(max-width: 35rem) 35vw, 200px" width="384" height="786" alt="Affirmation App home screen showing a daily affirmation, mood check-in and activity shortcuts" loading="lazy" decoding="async">
+              <img class="device-player" src="/portfolio/affirmation-meditation-384.webp" srcset="/portfolio/affirmation-meditation-384.webp 384w, /portfolio/affirmation-meditation-704.webp 704w" sizes="(max-width: 35rem) 35vw, 200px" width="384" height="786" alt="Affirmation App guided meditation player with a lakeside image and playback controls" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Home and meditation player · iOS prototype</figcaption>
+          </figure>
+          <details class="disclosure product-disclosure">
+            <summary>Engineering details<span class="visually-hidden"> for Affirmation App</span></summary>
+            <div class="disclosure-body">
+              <p>I used Clean Architecture to share business logic across Android and iOS with Kotlin Multiplatform and build the interface with Compose Multiplatform. The app uses Coroutines and Flow for asynchronous work and state, Ktor for networking, Koin for dependency injection and Room for local caching. The shared architecture supports media playback, reminders and content management.</p>
+              <figure class="transport-diagram">
+                <figcaption>Conversation transport</figcaption>
+                <div class="transport-lanes">
+                  <div>
+                    <h4>AI text</h4>
+                    <p class="transport-path">App <span aria-hidden="true">→</span> Edge Functions <span aria-hidden="true">→</span> Responses API</p>
+                    <p>A Supabase Edge Function calls the OpenAI Responses API and streams text back to the app using Server-Sent Events (SSE).</p>
+                  </div>
+                  <div>
+                    <h4>Real-time voice</h4>
+                    <p class="transport-path">App <span aria-hidden="true">↔</span> OpenAI Realtime API</p>
+                    <p>Native WebRTC on Android and iOS carries bidirectional speech-to-speech audio between the device and OpenAI.</p>
+                  </div>
                 </div>
+              </figure>
+              <p>Supabase uses JWT authentication. Edge Functions authorise voice sessions, manage their lifecycle and enforce usage quotas. PostgreSQL holds conversation and session records with Row-Level Security (RLS).</p>
+              <p class="development-note">Real-time voice was implemented and tested on Android and iOS during development.</p>
+            </div>
+          </details>
+        </article>
+
+        <div class="product-grid">
+          <article class="product compact-product" aria-labelledby="notebook-title">
+            <div class="product-body">
+              <p class="eyebrow">Android · Published</p>
+              <h3 id="notebook-title">Easy NoteBook</h3>
+              <p>A lightweight note-taking app with fast editing and local storage. I built, published and maintain it on Google Play.</p>
+              <p class="notebook-metric">
+                <strong>6,800+</strong> total installs<br>
+                <strong>1,000+</strong> users in the installed audience
+                <span>Google Play Console · November 2026</span>
+              </p>
+              <ul class="tech-list compact-stack" aria-label="Easy NoteBook technology"><li>Kotlin</li><li>Android SDK</li><li>SQLite</li><li>Coroutines</li></ul>
+              <div class="product-links">
+                <a class="text-link" href="/easy-notebook/">Explore Easy NoteBook</a>
+                <a class="text-link store-link" href="https://play.google.com/store/apps/details?id=com.notes.easynotebook" aria-label="Easy NoteBook on Google Play">
+                  <svg class="line-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="m6 4 14 8-14 8Z"/></svg>
+                  Google Play
+                </a>
               </div>
             </div>
-
-            <div class="mt-5 flex gap-2">
-              <button type="button" class="inline-flex flex-1 items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-primary text-white font-semibold
-                   hover:bg-[color:var(--primary-hover)] transition-colors" data-copy="yurii.sika@outlook.com">
-                <i class="fa-solid copy"></i>
-                Copy
-              </button>
-
-              <a href="mailto:yurii.sika@outlook.com"
-                class="inline-flex items-center justify-center px-4 py-2.5 rounded-2xl bg-white dark:bg-gray-900/40
-                   border border-slate-200 dark:border-gray-700 font-semibold hover:border-slate-300 dark:hover:border-gray-600 transition-colors">
-                Open
-              </a>
-            </div>
-
+            <div class="product-art notebook-art"><img src="/portfolio/easy-notebook-400.webp" width="400" height="877" alt="Easy NoteBook on Android, showing its list of saved notes" loading="lazy" decoding="async"></div>
           </article>
 
-          <!-- LinkedIn -->
-          <article class="contact-card bg-white dark:bg-gray-800 rounded-3xl border border-slate-200/70 dark:border-gray-700
-                      shadow-sm p-6">
-            <div class="flex items-center gap-3">
-              <span class="h-12 w-12 rounded-2xl grid place-items-center bg-blue-100 dark:bg-blue-900/30 text-primary">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-              <div>
-                <div class="font-bold text-lg">LinkedIn</div>
-                <div class="text-sm text-slate-600 dark:text-gray-400 break-all">yurii-sika-ld-in</div>
+          <article class="product compact-product" aria-labelledby="voice-title">
+            <div class="product-body">
+              <p class="eyebrow">Android · Published</p>
+              <h3 id="voice-title">Voice Transcribe</h3>
+              <p>A speech-to-text app supporting 14 languages. I integrated Android speech recognition for live transcription and built the interface in Compose.</p>
+              <ul class="tech-list compact-stack" aria-label="Voice Transcribe technology"><li>Kotlin</li><li>Jetpack Compose</li><li>Android Speech Recognition</li><li>Coroutines</li></ul>
+              <div class="product-links">
+                <a class="text-link" href="/voice-transcribe/">Explore Voice Transcribe</a>
+                <a class="text-link store-link" href="https://play.google.com/store/apps/details?id=com.voice.transcribe" aria-label="Voice Transcribe on Google Play">
+                  <svg class="line-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="m6 4 14 8-14 8Z"/></svg>
+                  Google Play
+                </a>
               </div>
             </div>
-
-            <div class="mt-5 flex gap-2">
-              <button type="button"
-                class="inline-flex flex-1 items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-white dark:bg-gray-900/40
-                   border border-slate-200 dark:border-gray-700 font-semibold hover:border-slate-300 dark:hover:border-gray-600 transition-colors"
-                data-copy="https://www.linkedin.com/in/yurii-sika-ld-in/">
-                <i class="fa-solid copy"></i>
-                Copy
-              </button>
-
-              <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yurii-sika-ld-in/" class="inline-flex items-center justify-center px-4 py-2.5 rounded-2xl bg-primary text-white font-semibold
-                   hover:bg-[color:var(--primary-hover)] transition-colors">
-                Open
-              </a>
-            </div>
-
+            <div class="product-art voice-art"><img src="/portfolio/voice-transcribe-400.webp" width="400" height="805" alt="Voice Transcribe on Android, showing the language selector and a live transcript" loading="lazy" decoding="async"></div>
           </article>
-
-          <!-- GitHub -->
-          <article class="contact-card bg-white dark:bg-gray-800 rounded-3xl border border-slate-200/70 dark:border-gray-700
-                      shadow-sm p-6">
-            <div class="flex items-center gap-3">
-              <span class="h-12 w-12 rounded-2xl grid place-items-center bg-blue-100 dark:bg-blue-900/30 text-primary">
-                <i class="fa-brands fa-github"></i>
-              </span>
-              <div>
-                <div class="font-bold text-lg">GitHub</div>
-                <div class="text-sm text-slate-600 dark:text-gray-400 break-all">github.com/yurasika25</div>
-              </div>
-            </div>
-
-            <div class="mt-5 flex gap-2">
-              <button type="button"
-                class="inline-flex flex-1 items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-white dark:bg-gray-900/40
-                   border border-slate-200 dark:border-gray-700 font-semibold hover:border-slate-300 dark:hover:border-gray-600 transition-colors"
-                data-copy="https://github.com/yurasika25">
-                <i class="fa-solid copy"></i>
-                Copy
-              </button>
-
-              <a target="_blank" rel="noopener" href="https://github.com/yurasika25" class="inline-flex items-center justify-center px-4 py-2.5 rounded-2xl bg-primary text-white font-semibold
-                   hover:bg-[color:var(--primary-hover)] transition-colors">
-                Open
-              </a>
-            </div>
-
-
-          </article>
-        </div>
-      </div>
-
-      <!-- Toast -->
-      <div id="contactToast" class="fixed left-1/2 -translate-x-1/2 bottom-6 z-[999] opacity-0 translate-y-2 pointer-events-none
-                              transition duration-200">
-        <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl border border-slate-200/70 dark:border-gray-700
-                shadow-lg rounded-2xl px-4 py-3 text-sm font-semibold">
-          Copied ✓
         </div>
       </div>
     </section>
 
+    <section class="shell section expertise" aria-labelledby="expertise-title">
+      <span class="anchor-alias" id="stack" aria-hidden="true"></span>
+      <div class="section-intro">
+        <h2 id="expertise-title">Engineering expertise</h2>
+      </div>
+      <div class="capabilities">
+        <article>
+          <div class="capability-heading">
+            <span class="capability-icon"><svg class="line-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 5.5h4m-3 13h2"/></svg></span>
+            <h3>Mobile engineering</h3>
+          </div>
+          <p>Kotlin, Java, Android SDK, Jetpack Compose, XML layouts, Kotlin Multiplatform and Compose Multiplatform.</p>
+        </article>
+        <article>
+          <div class="capability-heading">
+            <span class="capability-icon"><svg class="line-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5m-18 4 9 5 9-5"/></svg></span>
+            <h3>Architecture &amp; data</h3>
+          </div>
+          <p>System design, software architecture, Clean Architecture, MVVM and MVI. Coroutines, Flow, Ktor, Retrofit, Room and dependency injection.</p>
+        </article>
+        <article>
+          <div class="capability-heading">
+            <span class="capability-icon"><svg class="line-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M3 12h3l2-5 4 10 4-10 2 5h3"/></svg></span>
+            <h3>AI &amp; real-time systems</h3>
+          </div>
+          <p>Conversational AI, generative AI integration and large language models. OpenAI APIs, WebRTC, Server-Sent Events and speech-to-speech communication.</p>
+        </article>
+        <article>
+          <div class="capability-heading">
+            <span class="capability-icon"><svg class="line-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13a8 3 0 0 0 16 0v-13m-16 6.5a8 3 0 0 0 16 0"/></svg></span>
+            <h3>Backend &amp; cloud</h3>
+          </div>
+          <p>Supabase, PostgreSQL, Edge Functions and serverless computing. Authentication, JWT, Row-Level Security and database migrations.</p>
+        </article>
+        <article>
+          <div class="capability-heading">
+            <span class="capability-icon"><svg class="line-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg></span>
+            <h3>Device &amp; platform integration</h3>
+          </div>
+          <p>CameraX, Google ML Kit, QR code scanning, Android App Links, deep linking, media playback and speech recognition APIs.</p>
+        </article>
+        <article>
+          <div class="capability-heading">
+            <span class="capability-icon"><svg class="line-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="m7.5 12 3 3 6-6"/></svg></span>
+            <h3>Quality &amp; engineering delivery</h3>
+          </div>
+          <p>Automated testing with JUnit, MockK, Mockito and Espresso. Gradle, CI/CD, production debugging, legacy modernisation, release ownership and AI-assisted software development.</p>
+        </article>
+      </div>
+    </section>
 
+    <section class="experience-section section" id="experience" aria-labelledby="experience-title">
+      <div class="shell layout experience-layout">
+        <div class="section-intro"><h2 id="experience-title">Professional experience</h2></div>
+        <ol class="timeline">
+          <li>
+            <p class="eyebrow"><time datetime="2021-10">October 2021</time> – Present</p>
+            <h3>Abto Software</h3>
+            <p class="job-title">Android Software Engineer</p>
+            <p>I work on production applications for clients in North America, Europe and the UK, delivering Android features from design through release and maintenance.</p>
+            <p>My work includes API integrations, offline functionality, local persistence and reactive state. I investigate production issues, modernise Java and Kotlin codebases through refactoring and modularisation, and write unit and UI tests alongside cross-functional teams.</p>
+          </li>
+          <li>
+            <p class="eyebrow"><time datetime="2021-01">January 2021</time> – <time datetime="2021-10">October 2021</time></p>
+            <h3>FeelSoftware</h3>
+            <p class="job-title">Android Developer</p>
+            <p>I contributed to an English learning app with interactive lessons and audio, working on UI development and API integration with Kotlin, Coroutines, RxJava, Retrofit and MVVM.</p>
+          </li>
+        </ol>
+        <aside class="references" aria-labelledby="references-title">
+          <div>
+            <h3 id="references-title"><span class="reference-count">4</span> LinkedIn recommendations</h3>
+            <p>From a former direct manager and colleagues across Android engineering, QA, DevOps and mobile development.</p>
+          </div>
+          <a class="button secondary" href="https://www.linkedin.com/in/yurii-sika-ld-in/">View LinkedIn profile</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="shell section layout about" id="about" aria-labelledby="about-title">
+      <div class="section-intro"><p class="eyebrow">About</p><h2 id="about-title">How I work</h2></div>
+      <div class="about-copy">
+        <p>I’m a UK-based Android Software Engineer. I’ve worked on international products across transport, commerce, telecom, education, health and payments. I enjoy making established codebases easier to change while keeping the experience reliable for the people who depend on them.</p>
+        <p>On my own products, I work across design, engineering and delivery. Building for Android and iOS has given me room to explore shared architecture, AI integration and the trade-offs that come with taking an idea to release.</p>
+        <p>I value clear technical decisions, practical collaboration and attention to the details users encounter every day.</p>
+      </div>
+    </section>
+
+    <section class="shell contact-shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Professional enquiries</p>
+          <h2 id="contact-title">Let’s talk mobile engineering.</h2>
+          <p>Open to Android and mobile software engineering opportunities in the United Kingdom.</p>
+          <p>Based in the UK with the right to work. No sponsorship currently required.</p>
+        </div>
+        <div class="contact-actions">
+          <div class="actions">
+            <a class="button primary" id="email-link" href="mailto:yurii.sika@outlook.com">Get in touch</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/yurii-sika-ld-in/">Connect on LinkedIn</a>
+          </div>
+          <div class="email-line"><span id="email-address">yurii.sika@outlook.com</span><button class="copy-button" type="button" id="copy-email" hidden>Copy email</button></div>
+          <p class="copy-status" id="copy-status" role="status"></p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-white dark:bg-gray-800 py-10 border-t border-slate-100 dark:border-gray-700">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <div class="flex flex-wrap justify-center gap-6 mb-4">
-        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yurii-sika-ld-in/"
-          class="font-semibold hover:text-primary transition-colors">
-          LinkedIn
-        </a>
-        <a target="_blank" rel="noopener" href="https://github.com/yurasika25"
-          class="font-semibold hover:text-primary transition-colors">
-          GitHub
-        </a>
-        <button type="button" data-copy="yurii.sika@outlook.com"
-          class="hover:opacity-70 transition font-semibold cursor-pointer">
-          yurii.sika@outlook.com
-        </button>
-      </div>
-
-      <p class="text-slate-500 dark:text-gray-400 text-sm">
-        &copy; <span id="year"></span> Yurii Sika
-      </p>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="wordmark" href="#top"><span class="monogram" aria-hidden="true">YS</span><span>Yurii Sika</span></a>
+      <nav aria-label="Footer">
+        <a href="https://www.linkedin.com/in/yurii-sika-ld-in/">LinkedIn</a>
+        <a href="https://github.com/yurasika25">GitHub</a>
+        <a href="/sika-labs/">Sika Labs</a>
+      </nav>
+      <p>© <span id="year">2026</span> Yurii Sika</p>
     </div>
   </footer>
-
-  <script>
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
-    const htmlElement = document.documentElement;
-
-    // Initial theme
-    if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      htmlElement.classList.add('dark');
-      themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-
-    themeToggle.addEventListener('click', () => {
-      const isDark = htmlElement.classList.contains('dark');
-      if (isDark) {
-        htmlElement.classList.remove('dark');
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
-        localStorage.theme = 'light';
-      } else {
-        htmlElement.classList.add('dark');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-        localStorage.theme = 'dark';
-      }
-    });
-  </script>
-
-  <script>
-    (function () {
-      const toast = document.getElementById('contactToast');
-      function showToast(text) {
-        if (!toast) return;
-        toast.querySelector('div').textContent = text || 'Copied ✓';
-        toast.classList.remove('opacity-0', 'translate-y-2');
-        toast.classList.add('opacity-100', 'translate-y-0');
-        clearTimeout(window.__contactToastTimer);
-        window.__contactToastTimer = setTimeout(() => {
-          toast.classList.add('opacity-0', 'translate-y-2');
-          toast.classList.remove('opacity-100', 'translate-y-0');
-        }, 1300);
-      }
-
-      async function copyText(value) {
-        try {
-          await navigator.clipboard.writeText(value);
-          showToast('Copied ✓');
-        } catch (e) {
-          const ta = document.createElement('textarea');
-          ta.value = value;
-          ta.style.position = 'fixed';
-          ta.style.left = '-9999px';
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand('copy');
-          document.body.removeChild(ta);
-          showToast('Copied ✓');
-        }
-      }
-
-      document.querySelectorAll('[data-copy]').forEach(btn => {
-        btn.addEventListener('click', () => copyText(btn.getAttribute('data-copy')));
-      });
-    })();
-  </script>
-  <script>
-    if (location.pathname.endsWith('/index.html')) {
-      location.replace(location.pathname.replace('/index.html', '/'));
-    }
-  </script>
 </body>
-
 </html>
